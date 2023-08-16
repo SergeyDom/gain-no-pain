@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    restart: always
+    image: "postgres:15-alpine"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=gnp
+      - PORT=3333
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - "3333:5432"
+volumes:
+  data:
