@@ -36,7 +36,7 @@ create table reps
     volume       decimal(6, 3)
 
 );
-create
+cre
 
 
 
