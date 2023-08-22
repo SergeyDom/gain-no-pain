@@ -6,7 +6,7 @@ create table muscle_groups
 create table exercises
 (
     id               serial primary key,
-    name             varchar(50) not null ,
+    name             varchar(50) not null,
     muscle_groups_id integer
 );
 create table workouts
@@ -36,7 +36,9 @@ create table reps
     volume       decimal(6, 3)
 
 );
-c
+--добавил в таблицу id--
+ALTER TABLE workouts_exercises
+    ADD COLUMN id SERIAL PRIMARY KEY;
 
 
 
