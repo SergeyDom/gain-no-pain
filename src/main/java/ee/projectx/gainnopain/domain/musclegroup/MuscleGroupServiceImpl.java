@@ -13,6 +13,8 @@ public class MuscleGroupServiceImpl implements MuscleGroupService {
 
     @Override
     public List<MuscleGroupDao> getAll() {
+        System.out.println("Poluchil zapros na vse muscle");
+
         return muscleGroupRepository.findAll();
     }
 }

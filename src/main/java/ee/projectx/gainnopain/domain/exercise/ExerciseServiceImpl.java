@@ -11,5 +11,8 @@ public class ExerciseServiceImpl implements ExerciseService{
 
     private final ExerciseRepository exerciseRepository;
     @Override
-    public List<ExerciseDao> getAll(){return exerciseRepository.findAll();}
+    public List<ExerciseDao> getAll(){
+        System.out.println("JA POLUCHIL ZAPROS NA VSE EXERCISES");
+
+        return exerciseRepository.findAll();}
 }
